@@ -130,11 +130,11 @@ a {
 	height: auto;
 }
 
-.content a, .pagination a {
+.content a {
 	border-bottom: 1px dotted #37849c;
 }
 
-.content a:hover, .pagination a:hover {
+.content a:hover {
 	border-bottom: 0;
 }
 
@@ -146,9 +146,15 @@ a {
 	border-bottom: 2px solid #fff;
 	margin-top: 3px;
 	margin-top: 3rem;
-	padding-bottom: 3px;
-	padding-bottom: 0.3rem;
+	padding-bottom: 10px;
+	padding-bottom: 1rem;
+	padding-top: 10px;
+	padding-top: 1rem;
 	overflow: hidden;
+}
+
+.pagination a {
+	border-bottom: none;
 }
 
 .pagination .newer-posts {
