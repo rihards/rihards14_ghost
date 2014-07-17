@@ -151,12 +151,12 @@ a {
 	overflow: hidden;
 }
 
-.pagination .newer {
+.pagination .newer-posts {
 	float: left;
 	width: 50%;
 }
 
-.pagination .older {
+.pagination .older-posts {
 	float: right;
 	width: 50%;
 	text-align: right;
