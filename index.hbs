@@ -4,12 +4,12 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! The main content area on the homepage }}
-<main class="content" role="main">
+<main role="main">
     {{#foreach posts}}
     <article class="{{post_class}}">
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            <span class="date post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+            <p class="date post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
         </header>
         <section class="content">
             <p>{{excerpt}}&hellip;</p>
