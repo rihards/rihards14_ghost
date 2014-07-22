@@ -17,6 +17,12 @@
                 </section>
             </article>
 
+            <button onclick="load_disqus();">Load Comments</button>
+            <div id="disqus_thread"></div>
+
         {{/post}}
     </article>
 </main>
+{{#contentFor "disqus"}}
+<script type="text/javascript" async src="{{asset "js/disqus.min.js"}}"></script>
+{{/contentFor}}
