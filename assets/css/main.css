@@ -138,6 +138,11 @@ a {
 	border-bottom: 0;
 }
 
+.content hr {
+	border: 0;
+	border-bottom: 2px solid #ffffff;
+}
+
 .pagination {
 	font-size: 16px;
 	font-size: 1.6rem;
