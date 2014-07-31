@@ -108,6 +108,17 @@ a {
 
     p {
       margin: 2.4rem 0;
+
+      // inline code blocks
+      code {
+        font-family: monospace;
+        font-size: 0.85em;
+        white-space: pre-wrap;
+        color: $primary-background;
+        background: $text-color;
+        border-radius: 2px;
+        padding: 1px 3px;        
+      }
     }
 
     img {

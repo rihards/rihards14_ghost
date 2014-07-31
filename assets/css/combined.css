@@ -418,6 +418,14 @@ a {
       margin-left: 1.35em; }
     .site .content p {
       margin: 2.4rem 0; }
+      .site .content p code {
+        font-family: monospace;
+        font-size: 0.85em;
+        white-space: pre-wrap;
+        color: #e8f1f3;
+        background: #37849c;
+        border-radius: 2px;
+        padding: 1px 3px; }
     .site .content img {
       max-width: 100%;
       height: auto; }
