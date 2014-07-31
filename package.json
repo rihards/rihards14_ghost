@@ -1,4 +1,20 @@
 {
   "name": "rihards14",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "homepage": "htp://rihards.com/",
+  "author": {
+    "name": "Rihards Steinbergs",
+    "email": "rihards.steinbergs@gmail.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-shell": "^0.7.0",
+    "grunt-banner": "^0.2.3"
+  },
+  "private": true
 }
