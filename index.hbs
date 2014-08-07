@@ -1,14 +1,27 @@
+{{#contentFor "socialmeta"}}
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@rihards">
+<meta property="twitter:title" content="{{@blog.title}}">
+<meta property="twitter:description" content="{{@blog.description}}">
+<meta property="twitter:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
+<meta property="twitter:url" content="{{@blog.url}}">
+
+<meta property="og:site_name" content="{{@blog.title}}">
+<meta property="og:title" content="{{@blog.title}}">
+<meta property="og:locale" content="en_UK">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{@blog.description}}">
+<meta property="og:url" content="{{@blog.url}}">
+<meta property="og:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
+{{/contentFor}}
+
 {{!< default}}
-
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
-
 {{! The main content area on the homepage }}
 <main role="main">
     {{#foreach posts}}
     <article class="{{post_class}}">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
             <p class="date post-meta"><time datetime="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format="MMMM YYYY"}}</time></p>
         </header>
         <section class="content">

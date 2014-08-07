@@ -7,9 +7,26 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
+            {{#contentFor "socialmeta"}}
+            <meta property="twitter:card" content="summary">
+            <meta property="twitter:site" content="@rihards">
+            <meta property="twitter:title" content="{{title}}">
+            <meta property="twitter:description" content="{{excerpt words="32"}}">
+            <meta property="twitter:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
+            <meta property="twitter:url" content="{{url absolute="true"}}">
+
+            <meta property="og:site_name" content="{{@blog.title}}">
+            <meta property="og:title" content="{{title}}">
+            <meta property="og:locale" content="en_UK">
+            <meta property="og:type" content="website">
+            <meta property="og:description" content="{{excerpt words="32"}}">
+            <meta property="og:url" content="{{url absolute="true"}}">
+            <meta property="og:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
+            {{/contentFor}}
+
             <article class="{{post_class}}">
                 <header class="post-header">
-                    <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+                    <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
                     <p class="date post-meta"><time datetime="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format="MMMM YYYY"}}</time></p>
                 </header>
                 <section class="content">

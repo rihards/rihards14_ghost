@@ -22,21 +22,8 @@
         .site { max-width: 600px; margin: 0 auto; margin-top: 7.6rem; }
     </style>
 
-    {{! Twitter Cards }}
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
-    <meta name="twitter:title" content="{{meta_title}}">
-    <meta name="twitter:description" content="{{meta_description}}">
-    <meta name="twitter:creator" content="@rihards">
-
-    {{! Open Graph }}
-    <meta property="og:locale" content="en_UK">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{meta_title}}">
-    <meta property="og:description" content="{{meta_description}}">
-    <meta property="og:url" content="{{@blog.url}}">
-    <meta property="og:site_name" content="{{@blog.title}}">
-    <meta property="og:image" content="{{@blog.url}}{{asset "images/rihards-logo@2x.png"}}">
+    {{! Social Meta Tags }}
+    {{{block "socialmeta"}}}
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
